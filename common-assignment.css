@@ -1,1 +1,72 @@
-/* CSS declarations go here */
+body {
+  background-color: #bc2929;
+  color: #fff;
+  font-family: 'source-code-pro', sans-serif;
+  line-height: 1.75;
+}
+
+h1,
+h2,
+.title {
+  font-family: 'europa', 'Helvetica', 'Arial', sans-serif;
+}
+
+section {
+  padding: 4rem 0;
+}
+
+.intro {
+  background-color: #bc2929;
+}
+
+.title {
+  font-size: 50px;
+}
+.title a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.navbar {
+  font-size: 1.2rem;
+  text-align: right;
+  justify-content: flex-end;
+}
+.navbar ul {
+  list-style-type: none;
+  margin: auto auto;
+}
+.navbar li {
+  display: inline-block;
+  padding: 4rem 1rem;
+  vertical-align: middle;
+}
+.navbar a {
+  color: white;
+  letter-spacing: 0.25rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.navbar span:active {
+  padding-bottom: 5px;
+  border-bottom: 2px white solid;
+}
+.navbar span:hover {
+  padding-bottom: 5px;
+  border-bottom: 2px white solid;
+}
+
+.stuff1 {
+  background-color: #fff;
+  height: 600px;
+}
+
+.stuff2 {
+  background-color: #ff6600;
+  height: 600px;
+}
+
+.stuff3 {
+  background-color: white;
+  height: 600px;
+}
