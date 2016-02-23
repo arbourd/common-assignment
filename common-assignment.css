@@ -24,6 +24,13 @@ h2 {
   padding-bottom: 3rem;
 }
 
+h3 {
+  font-family: 'source-code-pro', sans-serif;
+  font-size: 2rem;
+  padding: 1rem 0;
+  text-transform: uppercase;
+}
+
 section {
   padding: 10rem 0;
 }
@@ -125,10 +132,20 @@ p {
   color: #555;
   text-align: center;
 }
-.plans a {
-  background-color: #fff;
-  color: #555;
-  text-align: center;
+.plans .box {
+  border: 1px #ddd solid;
+}
+.plans .essentials {
+  color: #28cb75;
+  border-top: 3px #28cb75 solid;
+}
+.plans .pro {
+  color: #9933ff;
+  border-top: 3px #9933ff solid;
+}
+.plans .server {
+  color: #ff0066;
+  border-top: 3px #ff0066 solid;
 }
 
 .contact {
