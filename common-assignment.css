@@ -1,7 +1,8 @@
 html {
-  position: relative;
   min-height: 100%;
+  position: relative;
 }
+
 body {
   background-color: #bc2929;
   color: #fff;
@@ -10,32 +11,15 @@ body {
   margin: 0 0 300px;
 }
 
-.container {
-  max-width: 1280px;
-}
-
-.wrapper {
-  margin: 0 auto;
-  width: 90%;
-}
-
-.spacer {
-  padding: 5rem 0;
-}
-
-h1,
-h2,
-.title {
-  font-family: 'europa', 'Helvetica', 'Arial', sans-serif;
-}
-
 h1 {
-  padding: 3em 0;
+  font-family: 'europa', 'Helvetica', 'Arial', sans-serif;
   font-size: 8rem;
+  padding: 3em 0;
   text-align: center;
 }
 
 h2 {
+  font-family: 'europa', 'Helvetica', 'Arial', sans-serif;
   font-size: 5rem;
   padding-bottom: 3rem;
 }
@@ -49,11 +33,32 @@ p {
   width: 100%;
 }
 
+/*  */
+/*  */
+/*  */
+.center {
+  text-align: center;
+}
+
+.container {
+  max-width: 1280px;
+}
+
+.spacer {
+  padding: 5rem 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 90%;
+}
+
 .intro {
   background-color: #bc2929;
 }
 
 .title {
+  font-family: 'europa', 'Helvetica', 'Arial', sans-serif;
   font-size: 50px;
 }
 .title a {
@@ -62,7 +67,7 @@ p {
 }
 
 .navbar {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-align: right;
   justify-content: flex-end;
   margin-bottom: 10rem;
@@ -91,14 +96,15 @@ p {
   text-transform: uppercase;
 }
 .navbar span {
-  position: absolute;
   background: #fff;
-  width: 0%;
+  bottom: 0;
   height: 2px;
   left: 0;
-  bottom: 0;
+  position: absolute;
+  width: 0;
   -webkit-transition: width 0.5s;
      -moz-transition: width 0.5s;
+       -o-transition: width 0.5s;
           transition: width 0.5s;
 }
 .navbar a:hover ~ span {
@@ -115,6 +121,8 @@ p {
 
 .plans {
   background-color: #fff;
+  color: #555;
+  text-align: center;
 }
 
 .contact {
@@ -123,13 +131,13 @@ p {
 
 footer {
   background-color: #555;
-  position: absolute;
-  left: 0;
   bottom: 0;
   height: 300px;
+  left: 0;
+  position: absolute;
   width: 100%;
 }
 footer .columns {
-  text-align: center;
   padding: 10% 0;
+  text-align: center;
 }
