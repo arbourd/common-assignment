@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  background-color: #cc0000;
+  background-color: #fff;
   color: #fff;
   font-family: 'source-code-pro', sans-serif;
   line-height: 1.75;
@@ -79,11 +79,6 @@ p {
     justify-content: flex-end;
     margin-bottom: 10rem;
   }
-  @media (max-width: 650px) {
-    .navbar {
-      text-align: left;
-    }
-  }
   .navbar ul {
     list-style-type: none;
     margin: auto auto;
@@ -127,6 +122,10 @@ p {
 }
 
 .plans {
+  color: #555;
+  text-align: center;
+}
+.plans a {
   background-color: #fff;
   color: #555;
   text-align: center;
@@ -147,4 +146,24 @@ footer {
 footer .columns {
   padding: 10% 0;
   text-align: center;
+}
+
+/*          */
+/* Media Qs */
+/*          */
+@media (max-width: 650px) {
+  .title,
+  .navbar {
+    text-align: center;
+  }
+}
+@media (max-width: 549px) {
+  .right{
+    text-align: left;
+  }
+}
+@media (max-width: 510px) {
+  .navbar li {
+    display: block;
+  }
 }
