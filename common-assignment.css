@@ -1,8 +1,13 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
 body {
   background-color: #bc2929;
   color: #fff;
   font-family: 'source-code-pro', sans-serif;
   line-height: 1.75;
+  margin: 0 0 300px;
 }
 
 .container {
@@ -116,6 +121,15 @@ p {
   background-color: #aaa;
 }
 
-.footer {
+footer {
   background-color: #555;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 300px;
+  width: 100%;
+}
+footer .columns {
+  text-align: center;
+  padding: 10% 0;
 }
