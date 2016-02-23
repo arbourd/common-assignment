@@ -8,7 +8,6 @@ body {
   color: #fff;
   font-family: 'source-code-pro', sans-serif;
   line-height: 1.75;
-  margin: 0 0 300px;
 }
 
 h1 {
@@ -27,7 +26,7 @@ h2 {
 h3 {
   font-family: 'source-code-pro', sans-serif;
   font-size: 2rem;
-  padding: 1rem 0;
+  padding-top: 1rem;
   text-transform: uppercase;
 }
 
@@ -40,15 +39,25 @@ p {
   width: 100%;
 }
 
+/*          */
+/* Skeleton */
+/*          */
+.button-primary {
+  background-color: #fff;
+  border: 1px #000 solid;
+  color: #555;
+  font-family: 'europa', 'Helvetica', 'Arial', sans-serif;
+}
+
+.container {
+  max-width: 1280px;
+}
+
 /*         */
 /* Helpers */
 /*         */
 .center {
   text-align: center;
-}
-
-.container {
-  max-width: 1280px;
 }
 
 .right {
@@ -82,9 +91,9 @@ p {
 
   .navbar {
     font-size: 1.5rem;
-    text-align: right;
     justify-content: flex-end;
     margin-bottom: 10rem;
+    text-align: right;
   }
   .navbar ul {
     list-style-type: none;
@@ -93,10 +102,10 @@ p {
   }
   .navbar li {
     display: inline-block;
-    padding: 0;
-    vertical-align: middle;
-    position: relative;
     margin: 3.5rem 1rem;
+    padding: 0;
+    position: relative;
+    vertical-align: middle;
   }
   .navbar a {
     color: white;
@@ -130,39 +139,71 @@ p {
 
 .plans {
   color: #555;
+  font-family: 'europa', 'Helvetica', 'Arial', sans-serif;
   text-align: center;
+  height: 100%;
 }
-.plans .box {
-  border: 1px #ddd solid;
-}
-.plans .essentials {
-  color: #28cb75;
-  border-top: 3px #28cb75 solid;
-}
-.plans .pro {
-  color: #9933ff;
-  border-top: 3px #9933ff solid;
-}
-.plans .server {
-  color: #ff0066;
-  border-top: 3px #ff0066 solid;
-}
+  .plans .box {
+    border: 1px #ddd solid;
+  }
+  .plans .essentials {
+    color: #28cb75;
+    border-top: 3px #28cb75 solid;
+  }
+  .plans .pro {
+    color: #9933ff;
+    border-top: 3px #9933ff solid;
+  }
+  .plans .server {
+    color: #ff0066;
+    border-top: 3px #ff0066 solid;
+  }
+  .plans ul {
+    line-height: 1.25;
+    list-style: none;
+  }
+  .plans li {
+    color: #555;
+    padding-top: 1rem;
+  }
+
+  .buy {
+    color: #fff;
+    font-family: 'source-code-pro', sans-serif;
+    margin-top: 1rem;
+    padding: 1rem 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .essentials .buy {
+    background-color: #28cb75;
+  }
+  .pro .buy {
+    background-color: #9933ff;
+  }
+  .server .buy {
+    background-color: #ff0066;
+  }
+
+  .price {
+    align-self: flex-end;
+    font-size: 3rem;
+  }
+  .subtext {
+    font-size: 1rem;
+  }
+
+  .info {
+    margin: 2rem 0;
+  }
 
 .contact {
-  background-color: #aaa;
+  color: #777;
+  background-color: #ddd;
 }
 
-footer {
-  background-color: #555;
-  bottom: 0;
-  height: 300px;
-  left: 0;
-  position: absolute;
-  width: 100%;
-}
-footer .columns {
-  padding: 10% 0;
-  text-align: center;
+.footer {
+  background-color: #333;
 }
 
 /*          */

@@ -77,14 +77,65 @@
         <h2 class="center">Pricing</h2>
       </div>
       <div class="row">
-        <div class="four columns box essentials">
-          <h3>Essential</h3>
+        <div class="four columns">
+          <div class="box essentials">
+            <h3>Essential</h3>
+            <ul>
+              <li><span>Web design & development</span></li>
+              <li><span>Open source software</span></li>
+              <li><span>Updates and progress via our app</span></li>
+              <li><span>Additional services available (marketing, branding)</span></li>
+            </ul>
+            <div class="price">
+              $2999
+            </div>
+            <div class="buy">
+              Buy
+            </div>
+          </div>
+          <div class="info">
+            <a>More info</a>
+          </div>
         </div>
-        <div class="four columns box pro">
-          <h3>Pro</h3>
+        <div class="four columns">
+          <div class="box pro">
+            <h3>Pro</h3>
+            <ul>
+              <li><span>Custom web application development</span></li>
+              <li><span>Open source software</span></li>
+              <li><span>Updates and progress via our app</span></li>
+              <li><span>Additional services available (marketing, branding)</span></li>
+            </ul>
+            <div class="price">
+              $5999
+            </div>
+            <div class="buy">
+              Buy
+            </div>
+          </div>
+          <div class="info">
+            <a>More info</a>
+          </div>
         </div>
-        <div class="four columns box server">
-          <h3>Hosting</h3>
+        <div class="four columns">
+          <div class="box server">
+            <h3>Hosting</h3>
+            <ul>
+              <li><span>24/7 Monitoring</span></li>
+              <li><span>Next day support</span></li>
+              <li><span>Basic control panel</span></li>
+              <li><span>Scaleable resources (extra charge)</span></li>
+            </ul>
+            <div class="price">
+              $35 <span class="subtext">/ month</span>
+            </div>
+            <div class="buy">
+              Buy
+            </div>
+          </div>
+          <div class="info">
+            <a>More info</a>
+          </div>
         </div>
       </div>
     </div>
@@ -95,10 +146,33 @@
         <h2 class="center">Get in touch</h2>
       </div>
       <div class="row">
+        <form>
+          <div class="row">
+            <div class="six columns">
+              <label for="exampleEmailInput">Your email</label>
+              <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+            </div>
+            <div class="six columns">
+              <label for="exampleRecipientInput">Reason for contacting</label>
+              <select class="u-full-width" id="exampleRecipientInput">
+                <option value="Questions">Questions</option>
+                <option value="Sales">Sales</option>
+                <option value="Support">Support</option>
+              </select>
+            </div>
+          </div>
+          <label for="exampleMessage">Message</label>
+          <textarea class="u-full-width" placeholder="" id="exampleMessage"></textarea>
+          <label class="send-yourself-copy">
+            <input type="checkbox">
+            <span class="label-body">Send a copy to yourself</span>
+          </label>
+          <input class="button-primary" type="submit" value="Submit">
+        </form>
       </div>
     </div>
   </section>
-  <footer>
+  <section class="footer">
     <div class="container">
       <div class="four columns">
         Column 1<br />
@@ -116,5 +190,5 @@
         Column 3<br />
       </div>
     </div>
-  </footer>
+  </section>
 </body>
