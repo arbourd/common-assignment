@@ -33,15 +33,19 @@ p {
   width: 100%;
 }
 
-/*  */
-/*  */
-/*  */
+/*         */
+/* Helpers */
+/*         */
 .center {
   text-align: center;
 }
 
 .container {
   max-width: 1280px;
+}
+
+.right {
+  text-align: right;
 }
 
 .spacer {
@@ -53,63 +57,66 @@ p {
   width: 90%;
 }
 
+/*          */
+/* Sections */
+/*          */
 .intro {
   background-color: #cc0000;
 }
 
-.title {
-  font-family: 'europa', 'Helvetica', 'Arial', sans-serif;
-  font-size: 50px;
-}
-.title a {
-  color: inherit;
-  text-decoration: inherit;
-}
-
-.navbar {
-  font-size: 1.5rem;
-  text-align: right;
-  justify-content: flex-end;
-  margin-bottom: 10rem;
-}
-@media (max-width: 650px) {
-  .navbar {
-    text-align: left;
+  .title {
+    font-family: 'europa', 'Helvetica', 'Arial', sans-serif;
+    font-size: 50px;
   }
-}
-.navbar ul {
-  list-style-type: none;
-  margin: auto auto;
-  white-space: nowrap;
-}
-.navbar li {
-  display: inline-block;
-  padding: 0;
-  vertical-align: middle;
-  position: relative;
-  margin: 3.5rem 1rem;
-}
-.navbar a {
-  color: white;
-  letter-spacing: 0.25rem;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-.navbar span {
-  background: #fff;
-  bottom: 0;
-  height: 2px;
-  left: 0;
-  position: absolute;
-  width: 0;
-  -webkit-transition: width 0.5s;
-     -moz-transition: width 0.5s;
-       -o-transition: width 0.5s;
-          transition: width 0.5s;
-}
-.navbar a:hover ~ span {
-  width: 100%;
-}
+  .title a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  .navbar {
+    font-size: 1.5rem;
+    text-align: right;
+    justify-content: flex-end;
+    margin-bottom: 10rem;
+  }
+  @media (max-width: 650px) {
+    .navbar {
+      text-align: left;
+    }
+  }
+  .navbar ul {
+    list-style-type: none;
+    margin: auto auto;
+    white-space: nowrap;
+  }
+  .navbar li {
+    display: inline-block;
+    padding: 0;
+    vertical-align: middle;
+    position: relative;
+    margin: 3.5rem 1rem;
+  }
+  .navbar a {
+    color: white;
+    letter-spacing: 0.25rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .navbar span {
+    background: #fff;
+    bottom: 0;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 0;
+    -webkit-transition: width 0.5s;
+       -moz-transition: width 0.5s;
+         -o-transition: width 0.5s;
+            transition: width 0.5s;
+  }
+  .navbar a:hover ~ span {
+    width: 100%;
+  }
 
 .about {
   background-color: #333;
