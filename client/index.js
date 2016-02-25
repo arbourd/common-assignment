@@ -9,7 +9,7 @@ if (Meteor.isClient) {
   });
 
   Template.stripe.events({
-    'click button': function (event, template) {
+    'click .buy': function (event, template) {
       amount = template.data.price;
       name = template.data.name;
       description = template.data.desc;

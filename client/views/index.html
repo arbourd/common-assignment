@@ -93,22 +93,7 @@
             <div class="price">
               $2999
             </div>
-            <div class="buy">
-              Buy
-              <button id="customButton">Purchase</button>
-              <form action="/charge" method="POST">
-                <script
-                  src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                  data-key="pk_test_piC2edrOoqf3aMu9nsEteq4h"
-                  data-image="/img/documentation/checkout/marketplace.png"
-                  data-name="Demo Site"
-                  data-description="2 widgets"
-                  data-currency="cad"
-                  data-amount="2000"
-                  data-locale="auto">
-                </script>
-              </form>
-            </div>
+            {{>stripe price="299900" name="Essentials" desc="Basic Website"}}
           </div>
           <div class="info">
             <a>More info</a>
@@ -126,9 +111,7 @@
             <div class="price">
               $5999
             </div>
-            <div class="buy">
-              Buy
-            </div>
+            {{>stripe price="599900" name="Pro" desc="Web Application Development"}}
           </div>
           <div class="info">
             <a>More info</a>
@@ -146,9 +129,7 @@
             <div class="price">
               $35 <span class="subtext">/ month</span>
             </div>
-            <div class="buy">
-              Buy
-            </div>
+            {{>stripe price="3500" name="Hosting" desc="Low cost servers"}}
           </div>
           <div class="info">
             <a>More info</a>
@@ -214,4 +195,10 @@
 
 <template name="privacyButton">
   <a>Privacy Policy</a>
+</template>
+
+<template name="stripe">
+  <div class="buy">
+    Buy
+  </div>
 </template>
