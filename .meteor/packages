@@ -21,3 +21,5 @@ insecure                # Allow all DB writes from clients (for prototyping)
 mrgalaxy:stripe
 johnantoni:meteor-skeleton
 fortawesome:fontawesome
+peppelg:bootstrap-3-modal
+twbs:bootstrap

@@ -178,7 +178,7 @@
               </select>
             </div>
           </div>
-          <label for="exampleMessage">Message</label>
+          <label for="exampleMessage" style="margin-top: 10px;">Message</label>
           <textarea class="u-full-width" rows="10" placeholder="" id="exampleMessage"></textarea>
           <label class="send-yourself-copy">
             <input type="checkbox">
@@ -197,7 +197,7 @@
             &copy;Copyright 2016 Common Engineering. All rights reserved.
           </li>
           <li>
-            <a>Privacy Policy</a>
+            {{> privacyButton}}
           </li>
         </ul>
       </div>
@@ -211,3 +211,7 @@
     </div>
   </footer>
 </body>
+
+<template name="privacyButton">
+  <a>Privacy Policy</a>
+</template>

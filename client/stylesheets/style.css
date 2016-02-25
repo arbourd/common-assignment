@@ -334,3 +334,18 @@ footer i:hover {
     display: block;
   }
 }
+
+
+/*                    */
+/* Override Bootstrap */
+/*                    */
+.modal {
+  color: #444;
+}
+* {
+  box-sizing: content-box;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}

@@ -1,3 +1,10 @@
+Template.privacyButton.events({
+  'click': function(e) {
+    e.preventDefault();
+    Modal.show('privacyModal');
+  }
+});
+
 var handler = StripeCheckout.configure({
   key: 'pk_test_piC2edrOoqf3aMu9nsEteq4h',
   image: '//img/documentation/checkout/marketplace.png',
