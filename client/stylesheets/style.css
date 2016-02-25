@@ -358,10 +358,61 @@ footer i:hover {
 
 
 /*                    */
+/* Plan Modals        */
+/*                    */
+
+/*#28cb75 essential*/
+/*#9933ff pro*/
+/*#ff0066 hosting*/
+
+.essential .modal-content{
+  background-color: #28cb75;
+}
+.essential .modal-header {
+  border-color: #1E9958;
+}
+.essential .modal-footer {
+  border-color: #1E9958;
+}
+.essential .modal-footer button {
+  background-color: #1E9958;
+}
+
+.pro .modal-content{
+  background-color: #9933ff;
+}
+.pro .modal-header {
+  border-color: #7325C0;
+}
+.pro .modal-footer {
+  border-color: #7325C0;
+}
+.pro .modal-footer button {
+  background-color: #7325C0;
+}
+
+.hosting .modal-content{
+  background-color: #ff0066;
+}
+.hosting .modal-header {
+  border-color: #C0004C;
+}
+.hosting .modal-footer {
+  border-color: #C0004C;
+}
+.hosting .modal-footer button {
+  background-color: #C0004C;
+}
+
+/*                    */
 /* Override Bootstrap */
 /*                    */
 .modal {
-  color: #444;
+  color: #fff;
+}
+.modal-footer button {
+  color: #fff;
+  border-width: 0;
 }
 * {
   box-sizing: content-box;
