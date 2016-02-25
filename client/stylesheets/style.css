@@ -55,11 +55,20 @@ p {
   border-radius: 50%;
   bottom: 70px;
   right: 15px;
+  color: #aaa !important;
+  -webkit-transition: all 0.5s;
+     -moz-transition: all 0.5s;
+       -o-transition: all 0.5s;
+          transition: all 0.5s;
 }
 .scroll-btn i {
   font-size: 3rem;
   padding: 10px 11px;
-  color: #aaa;
+}
+.scroll-btn:hover {
+  border-color: #cc0000;
+  color: #fff !important;
+  background-color: #cc0000;
 }
 
 /*          */

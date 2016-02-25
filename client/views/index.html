@@ -6,8 +6,8 @@
 </head>
 
 <body>
-  <!-- {{> topButton}} -->
-  <section class="intro">
+  {{> topButton}}
+  <section id="intro" class="intro">
     <div class="container nav">
       <div class="title six columns">
         <a href="/">COMMON</a>
@@ -199,7 +199,7 @@
   <a id="{{type}}">More info</a>
 </template>
 <template name="topButton">
-  <a class="scroll-btn">
+  <a class="scroll-btn" data-scroll href="#intro">
     <i class="fa fa-arrow-up"></i>
   </a>
 </template>
