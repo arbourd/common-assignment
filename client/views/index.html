@@ -95,6 +95,19 @@
             </div>
             <div class="buy">
               Buy
+              <button id="customButton">Purchase</button>
+              <form action="/charge" method="POST">
+                <script
+                  src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                  data-key="pk_test_piC2edrOoqf3aMu9nsEteq4h"
+                  data-image="/img/documentation/checkout/marketplace.png"
+                  data-name="Demo Site"
+                  data-description="2 widgets"
+                  data-currency="cad"
+                  data-amount="2000"
+                  data-locale="auto">
+                </script>
+              </form>
             </div>
           </div>
           <div class="info">
