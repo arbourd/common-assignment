@@ -364,7 +364,11 @@ footer i:hover {
 /*#28cb75 essential*/
 /*#9933ff pro*/
 /*#ff0066 hosting*/
-
+.modal.essential,
+.modal.pro,
+.modal.hosting {
+  color: #fff !important;
+}
 .essential .modal-content{
   background-color: #28cb75;
 }
@@ -408,7 +412,7 @@ footer i:hover {
 /* Override Bootstrap */
 /*                    */
 .modal {
-  color: #fff;
+  color: #444;
 }
 .modal-footer button {
   color: #fff;
