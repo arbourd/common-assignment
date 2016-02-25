@@ -1,6 +1,10 @@
 if (Meteor.isClient) {
   var stripeKey = 'pk_test_piC2edrOoqf3aMu9nsEteq4h';
 
+  Meteor.startup(function () {
+    smoothScroll.init();
+  });
+
   Template.privacyButton.events({
     'click': function(e) {
       e.preventDefault();
@@ -26,6 +30,7 @@ if (Meteor.isClient) {
       e.preventDefault();
     }
   });
+
 }
 
 if (Meteor.isServer) {
