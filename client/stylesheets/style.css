@@ -43,6 +43,21 @@ p {
   width: 100%;
 }
 
+.scroll-btn {
+  position: fixed;
+  border: 2px solid #ccc;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  bottom: 70px;
+  right: 15px;
+}
+.scroll-btn i {
+  font-size: 3rem;
+  padding: 10px 11px;
+  color: #aaa;
+}
+
 /*          */
 /* Skeleton */
 /*          */
@@ -142,6 +157,7 @@ p {
 }
 
 .plans {
+  /*height: 100vh;*/
   color: #555;
   font-family: 'europa', 'Helvetica', 'Arial', sans-serif;
   text-align: center;

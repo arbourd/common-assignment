@@ -5,6 +5,21 @@ if (Meteor.isClient) {
     smoothScroll.init();
   });
 
+  Template.moreButton.events({
+    'click #essential': function(e) {
+      e.preventDefault();
+      Modal.show('essentialModal');
+    },
+    'click #pro': function(e) {
+      e.preventDefault();
+      Modal.show('proModal');
+    },
+    'click #hosting': function(e) {
+      e.preventDefault();
+      Modal.show('hostingModal');
+    }
+  });
+
   Template.privacyButton.events({
     'click': function(e) {
       e.preventDefault();

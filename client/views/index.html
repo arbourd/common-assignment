@@ -1,14 +1,12 @@
 <head>
   <title>Common Engineering</title>
 
-  <!-- Temporary, Font Awesome -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" /> -->
-
   <script src="https://use.typekit.net/ujm5uci.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
 
 <body>
+  <!-- {{> topButton}} -->
   <section class="intro">
     <div class="container nav">
       <div class="title six columns">
@@ -96,7 +94,7 @@
             {{>stripe price="299900" name="Essentials" desc="Basic Website"}}
           </div>
           <div class="info">
-            <a>More info</a>
+            {{> moreButton type="essential"}}
           </div>
         </div>
         <div class="four columns">
@@ -114,7 +112,7 @@
             {{>stripe price="599900" name="Pro" desc="Web Application Development"}}
           </div>
           <div class="info">
-            <a>More info</a>
+            {{> moreButton type="pro"}}
           </div>
         </div>
         <div class="four columns">
@@ -132,7 +130,7 @@
             {{>stripe price="3500" name="Hosting" desc="Low cost servers"}}
           </div>
           <div class="info">
-            <a>More info</a>
+            {{> moreButton type="hosting"}}
           </div>
         </div>
       </div>
@@ -193,8 +191,17 @@
   </footer>
 </body>
 
+<!-- Buttons -->
 <template name="privacyButton">
   <a>Privacy Policy</a>
+</template>
+<template name="moreButton">
+  <a id="{{type}}">More info</a>
+</template>
+<template name="topButton">
+  <a class="scroll-btn">
+    <i class="fa fa-arrow-up"></i>
+  </a>
 </template>
 
 <template name="stripe">
