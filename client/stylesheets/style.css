@@ -391,19 +391,18 @@ footer i:hover {
 /*          */
 /* Media Qs */
 /*          */
-@media (max-width: 650px) {
-  .title,
-  .navbar {
+@media (min-width: 560px) and (max-width: 1050px) {
+  .navbar,
+  .title {
+    display: block;
     text-align: center;
+    width: 100% !important;
   }
 }
-@media (max-width: 549px) {
-  .right{
-    text-align: left;
-  }
-}
-@media (max-width: 510px) {
+@media (min-width: 250px) and (max-width: 560px) {
+  .title,
   .navbar li {
+    text-align: center;
     display: block;
   }
 }
