@@ -1,3 +1,7 @@
+* {
+  box-sizing: content-box;
+}
+
 html {
   min-height: 100%;
   position: relative;
@@ -12,6 +16,10 @@ body {
 
 a {
   cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 h1 {
@@ -38,6 +46,10 @@ h4 {
   font-family: 'source-code-pro', sans-serif;
 }
 
+h5 {
+  font-family: 'source-code-pro', sans-serif;
+}
+
 section {
   padding: 10rem 0;
 }
@@ -47,46 +59,9 @@ p {
   width: 100%;
 }
 
-.scroll-btn i {
-  position: fixed;
-  bottom: 10px;
-  right: 15px;
-  background-color: #333;
-  color: #666;
-  height: 23px;
-  width: 23px;
-  border-radius: 50%;
-  padding: 8px;
-  font-size: 2.5rem !important;
-  -webkit-transition: all 0.5s;
-     -moz-transition: all 0.5s;
-       -o-transition: all 0.5s;
-          transition: all 0.5s;
-
-}
-.scroll-btn i:hover {
-  border-color: #cc0000;
-  color: #fff !important;
-  background-color: #cc0000;
-}
-
-
-footer i.fa {
-  background-color: #333;
-  color: #666;
-  height: 23px;
-  width: 23px;
-  border-radius: 50%;
-  padding: 8px;
-  font-size: 2.5rem !important;
-  cursor: pointer;
-  -webkit-transition: all 0.3s;
-     -moz-transition: all 0.3s;
-          transition: all 0.3s;
-}
-footer i:hover {
-  background-color: #cc0000;
-  color: #fff;
+ol {
+  list-style: decimal outside;
+  padding: 0 0 0 25px;
 }
 
 /*          */
@@ -101,6 +76,11 @@ footer i:hover {
 
 .container {
   max-width: 1280px;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 /*         */
@@ -316,12 +296,6 @@ textarea {
 }
 
 
-
-
-
-
-
-
 /*          */
 /* Footer   */
 /*          */
@@ -370,15 +344,16 @@ footer ul li {
   display: inline-block;
   margin: 0;
 }
+
 footer i.fa {
   background-color: #333;
-  color: #666;
-  height: 23px;
-  width: 23px;
   border-radius: 50%;
-  padding: 8px;
-  font-size: 2.5rem !important;
+  color: #666;
   cursor: pointer;
+  font-size: 2.5rem !important;
+  height: 23px;
+  padding: 8px;
+  width: 23px;
   -webkit-transition: all 0.3s;
      -moz-transition: all 0.3s;
           transition: all 0.3s;
@@ -386,6 +361,47 @@ footer i.fa {
 footer i:hover {
   background-color: #cc0000;
   color: #fff;
+}
+
+footer i.fa {
+  background-color: #333;
+  border-radius: 50%;
+  color: #666;
+  cursor: pointer;
+  font-size: 2.5rem !important;
+  height: 23px;
+  padding: 8px;
+  width: 23px;
+  -webkit-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+          transition: all 0.3s;
+}
+footer i:hover {
+  background-color: #cc0000;
+  color: #fff;
+}
+
+.scroll-btn i {
+  background-color: #333;
+  border-radius: 50%;
+  bottom: 10px;
+  color: #666;
+  font-size: 2.5rem !important;
+  height: 23px;
+  padding: 8px;
+  position: fixed;
+  right: 15px;
+  width: 23px;
+  -webkit-transition: all 0.5s;
+     -moz-transition: all 0.5s;
+       -o-transition: all 0.5s;
+          transition: all 0.5s;
+
+}
+.scroll-btn i:hover {
+  background-color: #cc0000;
+  border-color: #cc0000;
+  color: #fff !important;
 }
 
 /*          */
@@ -480,22 +496,4 @@ footer i:hover {
      -moz-transition: all 0.5s;
        -o-transition: all 0.5s;
           transition: all 0.5s;
-}
-
-* {
-  box-sizing: content-box;
-}
-
-.row {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-ol {
-  list-style: decimal outside;
-  padding: 0 0 0 25px;
 }
