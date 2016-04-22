@@ -29,7 +29,7 @@ h2 {
 
 h3 {
   font-family: 'source-code-pro', sans-serif;
-  font-size: 2rem;
+  font-size: 3rem;
   padding-top: 1rem;
   text-transform: uppercase;
 }
@@ -193,30 +193,39 @@ footer i:hover {
   font-family: 'europa', 'Helvetica', 'Arial', sans-serif;
   text-align: center;
 }
+
+.plans h3 {
+  text-transform: none;
+}
+.plans p {
+  text-transform: uppercase;
+}
   .plans .box {
     border: 1px #ddd solid;
     position: relative;
     height: 375px;
   }
   .plans .essentials {
-    color: #28cb75;
+    /*color: #28cb75;*/
     border-top: 3px #28cb75 solid;
   }
   .plans .pro {
-    color: #9933ff;
+    /*color: #9933ff;*/
     border-top: 3px #9933ff solid;
   }
   .plans .server {
-    color: #ff0066;
+    /*color: #ff0066;*/
     border-top: 3px #ff0066 solid;
   }
   .plans ul {
     line-height: 1.25;
     list-style: none;
+    padding: 0;
   }
   .plans li {
-    color: #555;
-    padding-top: 1rem;
+    color: #666;
+    padding-top: 0rem;
+    /*text-transform: uppercase;*/
   }
 
   .buy {
@@ -273,7 +282,7 @@ form .row {
 }
 
 input[type="submit"] {
-  background-color: #cc0000;
+  background-color: #666;
   border-radius: 0;
   color: #fff;
   border-width: 0;
@@ -309,7 +318,7 @@ input[type="email"]:focus,
 select:focus,
 textarea:focus {
   border-width: 1px;
-  border-color: #cc0000;
+  border-color: #666;
 }
 textarea {
   height: 150px;
