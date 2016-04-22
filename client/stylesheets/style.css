@@ -9,8 +9,9 @@ html {
 
 body {
   background-color: #fff;
-  color: #fff;
-  font-family: 'source-code-pro', sans-serif;
+  color: #3d3e44;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
   line-height: 1.75;
 }
 
@@ -24,8 +25,8 @@ a:hover {
 
 h1 {
   font-family: 'europa', 'Helvetica', 'Arial', sans-serif;
-  font-size: 8rem;
-  padding: 3em 0;
+  font-size: 6rem;
+  padding: 10rem 0;
   text-align: center;
 }
 
@@ -36,7 +37,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'source-code-pro', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 3rem;
   padding-top: 1rem;
   text-transform: uppercase;
@@ -56,6 +57,8 @@ section {
 
 p {
   display: block;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
   width: 100%;
 }
 
@@ -107,7 +110,7 @@ ol {
 /* Sections */
 /*          */
 .intro {
-  background-color: #cc0000;
+  background-color: white;
 }
 
   .title {
@@ -115,14 +118,13 @@ ol {
     font-size: 50px;
   }
   .title a {
-    color: inherit;
+    color: #fd3e44;
     text-decoration: inherit;
   }
 
   .navbar {
     font-size: 1.5rem;
     justify-content: flex-end;
-    margin-bottom: 10rem;
     text-align: right;
   }
   .navbar ul {
@@ -138,13 +140,14 @@ ol {
     vertical-align: middle;
   }
   .navbar a {
-    color: white;
+    color: #3d3e44;
+    font-family: 'source-code-pro', sans-serif;
     letter-spacing: 0.25rem;
     text-decoration: none;
     text-transform: uppercase;
   }
   .navbar span {
-    background: #fff;
+    background: #fd3e44;
     bottom: 0;
     height: 2px;
     left: 0;
@@ -160,15 +163,38 @@ ol {
   }
 
 .about {
-  background-color: #333;
+  background-color: #fd3e44;
+  color: white;
 }
+
+  .about .one-third {
+    display: inline-block;
+    background: url('boysandgirls.png') no-repeat center center;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
 
 .services {
-  background-color: #0066ff;
+  background-color: #3d3e44;
+  color: white;
 }
 
+  .services .one-third {
+    background: url('pencilandsharpner.png') no-repeat center center;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .services ol {
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+    }
+
 .plans {
-  /*height: 100vh;*/
   color: #555;
   font-family: 'europa', 'Helvetica', 'Arial', sans-serif;
   text-align: center;
@@ -333,7 +359,6 @@ textarea {
 footer {
   background-color: #111;
   padding: 10px 6.25rem;
-  text-transform: uppercase;
   color: #979797;
   font-size: 1.35rem;
 }
@@ -446,12 +471,12 @@ footer i:hover {
 }
 @media (min-width: 900px) {
   .contact {
-    padding: 5em 10em;
+    padding: 5rem 10rem;
   }
 }
 @media (max-width: 899px) {
   .contact {
-    padding: 3em;
+    padding: 3rem;
   }
 }
 @media (min-width: 560px) and (max-width: 1050px) {
@@ -467,6 +492,9 @@ footer i:hover {
   .navbar li {
     text-align: center;
     display: block;
+  }
+  .one-third {
+    display: none !important;
   }
 }
 

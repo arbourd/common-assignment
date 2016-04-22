@@ -4,6 +4,7 @@
   <link rel="icon" type="image/png" href="/favicon.png">
 
   <script src="https://use.typekit.net/ujm5uci.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
 
@@ -48,21 +49,23 @@
       <div class="row">
         <h2 class="u-pull-right right">A different kind of technical consulting firm</h2>
       </div>
-      <div class="one-third column">
-      </div>
-      <div class="two-thirds column u-pull-right">
-        <p>
-          Common Engineering is different.
-        </p>
-        <p>
-          We are a collective of passionate engineers, designers, and students working together to forge the highest quality of software. Our team is made up of industry professionals who actively contribute to the opensource and startup communities. We build great software, for the love of building software.
-        </p>
-        <p>
-          We run a tight ship: our team works remotely, communicates asynchronously and uses only the best tools to ship your code as efficiently and quickly as possible.
-        </p>
-        <p>
-          We invest in our client relationships like we do our work. We believe in doing whatever is neccessary to get the job done properly the first time. Let us know what you need help with.
-        </p>
+      <div class="row">
+        <div class="one-third column">
+        </div>
+        <div class="two-thirds column u-pull-right">
+          <p>
+            Common Engineering is <em>different</em>.
+          </p>
+          <p>
+            We are a collective of passionate engineers, designers, and students working together to forge the highest quality of software. Our team is made up of industry professionals who actively contribute to the open-source and startup communities. We build great software, for the love of building software.
+          </p>
+          <p>
+            We run a tight ship: our team works remotely, communicates asynchronously and uses only the best tools to ship your code as efficiently and quickly as possible.
+          </p>
+          <p>
+            We invest in our client relationships like we do our work. We believe in doing whatever is necessary to get the job done properly the first time. Let us know what you need help with.
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -72,14 +75,12 @@
         <h2>Services we offer</h2>
       </div>
       <div class="row">
-        <div class="one-third column">
-        </div>
         <div class="two-thirds column">
           <p>
             No matter the problem, we can build the solution.
           </p>
           <p>
-            At Common, we belive in building and utilizing open source software. Unlike propritary libraries and stacks, open source allows us to iterate even faster using technologies relied on by the largest enterprise corperations, and freshest start ups.
+            At Common, we believe in building and utilizing open-source software. Unlike proprietary libraries and stacks, open source allows us to iterate even faster using technologies relied on by the largest enterprise corporations, and freshest start ups.
           </p>
           <p>
             We offer two tiers of web development:
@@ -96,6 +97,8 @@
             Additionally if needed, we are able to deploy, host and manage your web applications in the cloud with Google Cloud.
           </p>
         </div>
+        <div class="one-third column">
+        </div>
       </div>
     </div>
   </section>
@@ -105,59 +108,53 @@
         <h2 class="center">Pricing</h2>
       </div>
       <div class="row">
-        <div class="four columns">
-          <div class="box essentials">
-            <h3>Essential</h3>
-            <p>Web site design & development</p>
-            <ul>
-              <li><span>Open source software</span></li>
-              <li><span>Updates and progress via our app</span></li>
-              <li><span>Additional services available</span></li>
-            </ul>
-            <div class="info">
-              {{> moreButton type="essential"}}
-            </div>
-            <div class="price">
-              $2999
-            </div>
-            {{>stripe price="299900" name="Essentials" desc="Basic Website"}}
+        <div class="box essentials">
+          <h3>Essential</h3>
+          <p>Web site design & development</p>
+          <ul>
+            <li><span>Open source software</span></li>
+            <li><span>Updates and progress via our app</span></li>
+            <li><span>Additional services available</span></li>
+          </ul>
+          <div class="info">
+            {{> moreButton type="essential"}}
           </div>
+          <div class="price">
+            $2999
+          </div>
+          {{>stripe price="299900" name="Essentials" desc="Basic Website"}}
         </div>
-        <div class="four columns">
-          <div class="box pro">
-            <h3>Pro</h3>
-            <p>Custom web application development</p>
-            <ul>
-              <li><span>Open source software</span></li>
-              <li><span>Updates and progress via our app</span></li>
-              <li><span>Additional services available</span></li>
-            </ul>
-            <div class="info">
-              {{> moreButton type="pro"}}
-            </div>
-            <div class="price">
-              $5999
-            </div>
-            {{>stripe price="599900" name="Pro" desc="Web Application Development"}}
+        <div class="box pro">
+          <h3>Pro</h3>
+          <p>Custom web application development</p>
+          <ul>
+            <li><span>Open source software</span></li>
+            <li><span>Updates and progress via our app</span></li>
+            <li><span>Additional services available</span></li>
+          </ul>
+          <div class="info">
+            {{> moreButton type="pro"}}
           </div>
+          <div class="price">
+            $5999
+          </div>
+          {{>stripe price="599900" name="Pro" desc="Web Application Development"}}
         </div>
-        <div class="four columns">
-          <div class="box server">
-            <h3>Hosting</h3>
-            <p>24/7 Hosting and Monitoring</p>
-            <ul>
-              <li><span>Next day support</span></li>
-              <li><span>Basic control panel</span></li>
-              <li><span>Scaleable resources (extra charge)</span></li>
-            </ul>
-            <div class="info">
-              {{> moreButton type="hosting"}}
-            </div>
-            <div class="price">
-              $35 <span class="subtext">/ month</span>
-            </div>
-            {{>stripe price="3500" name="Hosting" desc="Low cost servers"}}
+        <div class="box server">
+          <h3>Hosting</h3>
+          <p>24/7 Hosting and Monitoring</p>
+          <ul>
+            <li><span>Next day support</span></li>
+            <li><span>Basic control panel</span></li>
+            <li><span>Scaleable resources (extra charge)</span></li>
+          </ul>
+          <div class="info">
+            {{> moreButton type="hosting"}}
           </div>
+          <div class="price">
+            $35 <span class="subtext">/ month</span>
+          </div>
+          {{>stripe price="3500" name="Hosting" desc="Low cost servers"}}
         </div>
       </div>
     </div>
@@ -207,13 +204,10 @@
           <li>
             &copy;Copyright 2016 Common Engineering. All rights reserved.
           </li>
-          <li>
-            {{> privacyButton}}
-          </li>
         </ul>
       </div>
       <div class="two">
-        Connect with us!
+        {{> privacyButton}}
       </div>
       <div class="three">
         <a href="https://twitter.com/common_eng" target="_blank">
