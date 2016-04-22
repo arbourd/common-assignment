@@ -176,14 +176,20 @@ ol {
 
 .plans h3 {
   text-transform: none;
+  font-weight: bold;
+  text-align: center;
 }
 .plans p {
   text-transform: uppercase;
+  font-weight: bold;
+  color: #666;
+  text-align: center;
 }
   .plans .box {
-    border: 1px #ddd solid;
+    border: 0px #ddd solid;
+    margin-top: 5rem;
     position: relative;
-    height: 375px;
+    height: 350px;
   }
   .plans .essentials {
     /*color: #28cb75;*/
@@ -200,10 +206,11 @@ ol {
   .plans ul {
     line-height: 1.25;
     list-style: none;
-    padding: 0;
+    display: inline-block;
+    /*padding: 0 1em 0 3em;*/
   }
   .plans li {
-    color: #666;
+    color: #999;
     padding-top: 0rem;
     /*text-transform: uppercase;*/
   }
@@ -213,22 +220,34 @@ ol {
     color: #fff;
     cursor: pointer;
     font-family: 'source-code-pro', sans-serif;
+    font-size: 1.5em;
     left: 0;
-    margin-top: 1rem;
+    /*margin-top: 1rem;*/
+    margin: 1rem auto 0;
     padding: 1rem 0;
     position: absolute;
     right: 0;
     text-align: center;
     text-transform: uppercase;
+    width: 75%;
   }
   .essentials .buy {
     background-color: #28cb75;
   }
+  .essentials a {
+    color: #28cb75;
+  }
   .pro .buy {
     background-color: #9933ff;
   }
+  .pro a {
+    color: #9933ff;
+  }
   .server .buy {
     background-color: #ff0066;
+  }
+  .server a {
+    color: #ff0066;
   }
 
   .price {
@@ -244,12 +263,15 @@ ol {
   }
 
   .info {
-    margin: 2rem 0;
+    margin: -1.25rem 0 0 0;
   }
 
 .contact {
   color: #777;
   background-color: #222;
+}
+.contact .container {
+  width: auto;
 }
 
 
@@ -416,6 +438,22 @@ footer i:hover {
 /*          */
 /* Media Qs */
 /*          */
+.contact {
+  -webkit-transition: padding 0.5s;
+     -moz-transition: padding 0.5s;
+       -o-transition: padding 0.5s;
+          transition: padding 0.5s;
+}
+@media (min-width: 900px) {
+  .contact {
+    padding: 5em 10em;
+  }
+}
+@media (max-width: 899px) {
+  .contact {
+    padding: 3em;
+  }
+}
 @media (min-width: 560px) and (max-width: 1050px) {
   .navbar,
   .title {
@@ -443,42 +481,13 @@ footer i:hover {
 .modal.essential,
 .modal.pro,
 .modal.hosting {
-  color: #fff !important;
-}
-.essential .modal-content{
-  background-color: #28cb75;
-}
-.essential .modal-header {
-  border-color: #1E9958;
-}
-.essential .modal-footer {
-  border-color: #1E9958;
+  color: #333 !important;
 }
 .essential .modal-footer button {
   background-color: #1E9958;
 }
-
-.pro .modal-content{
-  background-color: #9933ff;
-}
-.pro .modal-header {
-  border-color: #7325C0;
-}
-.pro .modal-footer {
-  border-color: #7325C0;
-}
 .pro .modal-footer button {
   background-color: #7325C0;
-}
-
-.hosting .modal-content{
-  background-color: #ff0066;
-}
-.hosting .modal-header {
-  border-color: #C0004C;
-}
-.hosting .modal-footer {
-  border-color: #C0004C;
 }
 .hosting .modal-footer button {
   background-color: #C0004C;
@@ -492,10 +501,18 @@ footer i:hover {
 }
 .modal h4 {
   border-bottom: 2px solid #ddd;
-  margin: 35px 0 30px;
+  margin: 25px 0;
+}
+.modal h4:first-child {
+  margin-top: 10px;
 }
 .modal-body {
   padding: 15px 25px;
+  font-family: 'europa', 'Helvetica', 'Arial', sans-serif;
+}
+.modal-content {
+  border-bottom: 2px solid #dfdfdf;
+  border-top: 2px solid #dfdfdf;
 }
 .modal-footer button {
   color: #fff;
@@ -505,4 +522,12 @@ footer i:hover {
      -moz-transition: all 0.5s;
        -o-transition: all 0.5s;
           transition: all 0.5s;
+}
+.modal-footer button:hover {
+  color: #fff;
+  border-width: 0;
+  opacity: 0.8;
+}
+.btn-default:hover {
+  background-color: #444;
 }

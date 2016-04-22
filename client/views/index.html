@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  {{> topButton}}
+  <!-- {{> topButton}} -->
   <section id="intro" class="intro">
     <div class="container nav">
       <div class="title six columns">
@@ -112,15 +112,15 @@
             <ul>
               <li><span>Open source software</span></li>
               <li><span>Updates and progress via our app</span></li>
-              <li><span>Additional services available (marketing, branding)</span></li>
+              <li><span>Additional services available</span></li>
             </ul>
+            <div class="info">
+              {{> moreButton type="essential"}}
+            </div>
             <div class="price">
               $2999
             </div>
             {{>stripe price="299900" name="Essentials" desc="Basic Website"}}
-          </div>
-          <div class="info">
-            {{> moreButton type="essential"}}
           </div>
         </div>
         <div class="four columns">
@@ -130,15 +130,15 @@
             <ul>
               <li><span>Open source software</span></li>
               <li><span>Updates and progress via our app</span></li>
-              <li><span>Additional services available (marketing, branding)</span></li>
+              <li><span>Additional services available</span></li>
             </ul>
+            <div class="info">
+              {{> moreButton type="pro"}}
+            </div>
             <div class="price">
               $5999
             </div>
             {{>stripe price="599900" name="Pro" desc="Web Application Development"}}
-          </div>
-          <div class="info">
-            {{> moreButton type="pro"}}
           </div>
         </div>
         <div class="four columns">
@@ -146,18 +146,17 @@
             <h3>Hosting</h3>
             <p>24/7 Hosting and Monitoring</p>
             <ul>
-              <li><span>24/7 Monitoring</span></li>
               <li><span>Next day support</span></li>
               <li><span>Basic control panel</span></li>
               <li><span>Scaleable resources (extra charge)</span></li>
             </ul>
+            <div class="info">
+              {{> moreButton type="hosting"}}
+            </div>
             <div class="price">
               $35 <span class="subtext">/ month</span>
             </div>
             {{>stripe price="3500" name="Hosting" desc="Low cost servers"}}
-          </div>
-          <div class="info">
-            {{> moreButton type="hosting"}}
           </div>
         </div>
       </div>
