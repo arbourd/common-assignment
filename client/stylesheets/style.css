@@ -196,20 +196,19 @@ ol {
 
 .plans {
   color: #555;
-  font-family: 'europa', 'Helvetica', 'Arial', sans-serif;
   text-align: center;
 }
 
-.plans h3 {
-  text-transform: none;
-  font-weight: bold;
-  text-align: center;
-}
-.plans p {
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #666;
-  text-align: center;
+  .plans h3 {
+    /*text-transform: none;
+    font-weight: bold;*/
+    text-align: center;
+  }
+  .plans p {
+    /*text-transform: uppercase;*/
+    font-weight: bold;
+    color: #666;
+    text-align: center;
 }
   .plans .box {
     border: 0px #ddd solid;
@@ -218,78 +217,61 @@ ol {
     height: 350px;
   }
   .plans .essentials {
-    /*color: #28cb75;*/
-    border-top: 3px #28cb75 solid;
+    /*color: #18b290;*/
+    border-top: 3px #18b290 solid;
   }
   .plans .pro {
-    /*color: #9933ff;*/
-    border-top: 3px #9933ff solid;
+    /*color: #177be3;*/
+    border-top: 3px #177be3 solid;
   }
   .plans .server {
-    /*color: #ff0066;*/
-    border-top: 3px #ff0066 solid;
+    /*color: #ff931e;*/
+    border-top: 3px #ff931e solid;
   }
   .plans ul {
     line-height: 1.25;
     list-style: none;
     display: inline-block;
-    /*padding: 0 1em 0 3em;*/
   }
   .plans li {
     color: #999;
     padding-top: 0rem;
-    /*text-transform: uppercase;*/
   }
 
   .buy {
-    bottom: 0;
     color: #fff;
     cursor: pointer;
     font-family: 'source-code-pro', sans-serif;
-    font-size: 1.5em;
-    left: 0;
-    /*margin-top: 1rem;*/
     margin: 1rem auto 0;
     padding: 1rem 0;
-    position: absolute;
-    right: 0;
     text-align: center;
     text-transform: uppercase;
     width: 75%;
   }
   .essentials .buy {
-    background-color: #28cb75;
+    background-color: #18b290;
   }
   .essentials a {
-    color: #28cb75;
+    color: #18b290;
   }
   .pro .buy {
-    background-color: #9933ff;
+    background-color: #177be3;
   }
   .pro a {
-    color: #9933ff;
+    color: #177be3;
   }
   .server .buy {
-    background-color: #ff0066;
+    background-color: #ff931e;
   }
   .server a {
-    color: #ff0066;
+    color: #ff931e;
   }
 
   .price {
-    position: absolute;
-    bottom: 75px;
-    left: 0;
-    right: 0;
-    align-self: flex-end;
     font-size: 3rem;
   }
   .subtext {
     font-size: 1rem;
-  }
-
-  .info {
-    margin: -1.25rem 0 0 0;
   }
 
 .contact {
@@ -474,6 +456,12 @@ footer i:hover {
     padding: 5rem 10rem;
   }
 }
+@media (max-width: 1199px) {
+  .box {
+    margin: 6rem 0 6rem 0 !important;
+    width: 100% !important;
+  }
+}
 @media (max-width: 899px) {
   .contact {
     padding: 3rem;
@@ -503,22 +491,22 @@ footer i:hover {
 /* Plan Modals        */
 /*                    */
 
-/*#28cb75 essential*/
-/*#9933ff pro*/
-/*#ff0066 hosting*/
+/*#18b290 essential*/
+/*#177be3 pro*/
+/*#ff931e hosting*/
 .modal.essential,
 .modal.pro,
 .modal.hosting {
   color: #333 !important;
 }
 .essential .modal-footer button {
-  background-color: #1E9958;
+  background-color: #18b290;
 }
 .pro .modal-footer button {
-  background-color: #7325C0;
+  background-color: #177be3;
 }
 .hosting .modal-footer button {
-  background-color: #C0004C;
+  background-color: #ff931e;
 }
 
 /*                    */
@@ -528,15 +516,15 @@ footer i:hover {
   color: #444;
 }
 .modal h4 {
-  border-bottom: 2px solid #ddd;
+  font-family: 'europa', 'Helvetica', 'Arial', sans-serif;
   margin: 25px 0;
+  text-transform: uppercase;
 }
 .modal h4:first-child {
   margin-top: 10px;
 }
 .modal-body {
   padding: 15px 25px;
-  font-family: 'europa', 'Helvetica', 'Arial', sans-serif;
 }
 .modal-content {
   border-bottom: 2px solid #dfdfdf;
